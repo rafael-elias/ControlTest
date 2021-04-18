@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniControl", "UniControl\UniControl.csproj", "{D37673E2-2B5C-47BB-B30D-52578832327F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador Win", "Instalador Windows\Instalador Win\Instalador Win.vdproj", "{DCE880AA-4228-4B69-B183-675E14258DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D37673E2-2B5C-47BB-B30D-52578832327F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37673E2-2B5C-47BB-B30D-52578832327F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37673E2-2B5C-47BB-B30D-52578832327F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37673E2-2B5C-47BB-B30D-52578832327F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE880AA-4228-4B69-B183-675E14258DAE}.Debug|Any CPU.ActiveCfg = Debug
+		{DCE880AA-4228-4B69-B183-675E14258DAE}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78BCE9C2-6206-4B93-8543-0AF992F30613}
+	EndGlobalSection
+EndGlobal
