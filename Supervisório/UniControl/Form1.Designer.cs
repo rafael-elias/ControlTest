@@ -52,6 +52,7 @@
             this.vToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -96,7 +97,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -197,26 +197,26 @@
             // habilitarToolStripMenuItem
             // 
             this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
-            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.habilitarToolStripMenuItem.Text = "Habilitar";
             this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
             // 
             // desabilitarToolStripMenuItem
             // 
             this.desabilitarToolStripMenuItem.Name = "desabilitarToolStripMenuItem";
-            this.desabilitarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.desabilitarToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.desabilitarToolStripMenuItem.Text = "Desabilitar";
             this.desabilitarToolStripMenuItem.Click += new System.EventHandler(this.desabilitarToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(126, 6);
             // 
             // oQueÉToolStripMenuItem
             // 
             this.oQueÉToolStripMenuItem.Name = "oQueÉToolStripMenuItem";
-            this.oQueÉToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oQueÉToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.oQueÉToolStripMenuItem.Text = "O que é?";
             this.oQueÉToolStripMenuItem.Click += new System.EventHandler(this.oQueÉToolStripMenuItem_Click);
             // 
@@ -235,11 +235,13 @@
             this.vToolStripMenuItem.Name = "vToolStripMenuItem";
             this.vToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.vToolStripMenuItem.Text = "0-10V";
+            this.vToolStripMenuItem.Click += new System.EventHandler(this.vToolStripMenuItem_Click);
             // 
             // vToolStripMenuItem1
             // 
+            this.vToolStripMenuItem1.Enabled = false;
             this.vToolStripMenuItem1.Name = "vToolStripMenuItem1";
-            this.vToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
+            this.vToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.vToolStripMenuItem1.Text = "0-5V";
             // 
             // mAToolStripMenuItem
@@ -247,6 +249,14 @@
             this.mAToolStripMenuItem.Name = "mAToolStripMenuItem";
             this.mAToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.mAToolStripMenuItem.Text = "0-20mA";
+            this.mAToolStripMenuItem.Click += new System.EventHandler(this.mAToolStripMenuItem_Click);
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // groupBox2
             // 
@@ -766,13 +776,6 @@
             this.label8.Size = new System.Drawing.Size(33, 17);
             this.label8.TabIndex = 54;
             this.label8.Text = "SP:";
-            // 
-            // sobreToolStripMenuItem
-            // 
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.sobreToolStripMenuItem.Text = "Sobre";
-            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // Form1
             // 
