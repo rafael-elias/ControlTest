@@ -60,7 +60,7 @@ pinMode(PIN_I,INPUT);
 analogReference(EXTERNAL);
 digitalWrite(CS,HIGH);
 digitalWrite(SCK, LOW);
-Serial.begin(57600);
+Serial.begin(115200);
 byte modo_aut = EEPROM.read(35);
 if (modo_aut == 33)
 lere2prom();
