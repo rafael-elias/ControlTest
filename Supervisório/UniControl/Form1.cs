@@ -35,6 +35,10 @@ namespace UniControl
             serialPort1.NewLine = "\n";
             frm = new Config_Control(serialPort1);
             MemBufferRec.Multiline = true;
+            this.SetStyle(
+            ControlStyles.AllPaintingInWmPaint |
+            ControlStyles.UserPaint |
+            ControlStyles.DoubleBuffer, true);
         }
 
 
@@ -195,6 +199,15 @@ namespace UniControl
         {
            
             int SPtemp = (int)(Math.Round(Double.Parse(textBox3.Text), 2) * 100);
+            if ((status_cfginfb == 80) | (status_cfginfb == 82))
+            {
+                if (SPtemp > 1000)
+                {
+                    textBox3.Text = "10";
+                    SPtemp = 1000;
+                }
+
+            }
             if (SPtemp > 2000)
             {
                 textBox3.Text = "20";
@@ -407,6 +420,34 @@ namespace UniControl
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Plataforma Didática para Implementação e Avaliação de Controladores Discretos\r\nTCC de Engenharia de Controle e Automação\r\nIfes - Campus Serra\r\nAutor: Rafael Elias de Sousa\r\nOrientador: Prof. Dr. Saul Munareto", "Sobre", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void mAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            byte[] temp = { 73, 0, 0 };
+                temp[1] = 1;
+                temp[2] = temp[1];
+            serialPort1.Write(temp, 0, 3);
+            //zera MV e SP
+            textBox2.Text = "0";
+            enviarmv.PerformClick();
+            textBox3.Text = "0";
+            enviarsp.PerformClick();
+        }
+
+        private void vToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            byte[] temp = { 73, 0, 0 };
+            temp[1] = 0;
+            temp[2] = temp[1];
+            serialPort1.Write(temp, 0, 3);
+            //zera MV e SP
+            textBox2.Text = "0";
+            enviarmv.PerformClick();
+            textBox3.Text = "0";
+            enviarsp.PerformClick();
+
+
         }
 
         private void SalvarToolStripMenuItem_Click(object sender, EventArgs e)
